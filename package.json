@@ -1,0 +1,19 @@
+{
+  "name": "orange-component",
+  "version": "0.0.0",
+  "description": "Svelte UI Library",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "svelte",
+    "component"
+  ],
+  "author": "southorange",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/svelte": "^3.0.0",
+    "svelte": "^3.46.6"
+  }
+}
