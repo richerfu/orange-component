@@ -3,22 +3,18 @@
   "version": "0.0.0",
   "description": "Svelte UI Library",
   "scripts": {
+    "preinstall": "cd site && npm i",
     "dev": "cd site && npm run dev",
-    "clean": "rm -rf node_modules && yarn workspaces run clean"
+    "clean": "rm -rf node_modules && cd site && npm run clean"
   },
   "keywords": [
     "svelte",
     "component"
   ],
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "author": "southorange",
   "license": "MIT",
   "devDependencies": {
     "@tsconfig/svelte": "^3.0.0",
-    "lerna": "^4.0.0",
     "svelte": "^3.46.6"
   }
 }

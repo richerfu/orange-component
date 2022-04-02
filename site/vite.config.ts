@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [svelte()],
   resolve: {
     alias: {
-      "orange-component": join(__dirname, "../packages/component/src"),
+      "orange-component": join(__dirname, "../src"),
     },
   },
 });
