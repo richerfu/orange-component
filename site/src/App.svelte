@@ -1,13 +1,13 @@
 <script lang="ts">
   import logo from "./assets/svelte.png";
   import Counter from "./lib/Counter.svelte";
-  import { Button } from "../../src";
+  import { Button } from "orange-component";
 </script>
 
 <main>
   <img src={logo} alt="Svelte Logo" />
   <h1>Hello Typescript!</h1>
-  <Button>按钮</Button>
+  <Button disabled>按钮</Button>
 
   <Counter />
 
