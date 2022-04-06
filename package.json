@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Svelte UI Library",
   "scripts": {
-    "preinstall": "cd site && npm i",
+    "preinstall": "cd site && npm install",
     "dev": "cd site && npm run dev",
     "clean": "rm -rf node_modules && cd site && npm run clean"
   },
@@ -16,5 +16,8 @@
   "devDependencies": {
     "@tsconfig/svelte": "^3.0.0",
     "svelte": "^3.46.6"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1"
   }
 }

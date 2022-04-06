@@ -15,10 +15,5 @@
     "allowJs": true,
     "checkJs": true
   },
-  "include": [
-    "packages/**/*.d.ts",
-    "packages/**/*.ts",
-    "packages/**/*.js",
-    "packages/**/*.svelte"
-  ]
+  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"]
 }
