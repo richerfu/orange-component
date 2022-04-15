@@ -3,7 +3,17 @@
   "version": "0.0.0",
   "description": "Svelte UI Library",
   "scripts": {
-    "preinstall": "cd site && npm install",
+    "preinstall": "husky install && cd site && npm install",
+    "lint:js:check": "eslint --ext .js,.ts,.svelte src/ site/",
+    "lint:js:quiet": "eslint --quiet --ext .js,.ts,.svelte src/ site/",
+    "lint:js:fix": "eslint --fix --ext .js,.ts,.svelte src/ site/",
+    "lint:style:check": "stylelint \"**/*.less\" --custom-syntax postcss-less",
+    "lint:style:fix": "stylelint --fix \"**/*.less\" --custom-syntax postcss-less",
+    "lint:prettier:check": "prettier --check \"**/*\" --end-of-line auto",
+    "lint:prettier:fix": "prettier -c --write \"**/*\"",
+    "lint-staged": "lint-staged",
+    "lint-staged:js": "eslint --ext .js,.ts,.svelte",
+    "lint": "npm run lint:js:check && npm run lint:style:check",
     "dev": "cd site && npm run dev",
     "clean": "rm -rf node_modules && cd site && npm run clean"
   },
@@ -14,10 +24,37 @@
   "author": "southorange",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-angular": "^16.2.3",
     "@tsconfig/svelte": "^3.0.0",
-    "svelte": "^3.46.6"
+    "@types/node": "^17.0.24",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-svelte3": "^3.4.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "postcss-less": "^6.0.0",
+    "prettier": "^2.6.2",
+    "prettier-plugin-svelte": "^2.7.0",
+    "stylelint": "^14.6.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^25.0.0",
+    "svelte": "^3.46.6",
+    "typescript": "^4.6.3"
   },
   "dependencies": {
     "classnames": "^2.3.1"
+  },
+  "lint-staged": {
+    "**/*.less": "stylelint --custom-syntax postcss-less",
+    "**/*.{js,ts,svelte}": "npm run lint-staged:js",
+    "**/*.{js,ts,svelte,less,md,json}": [
+      "prettier --write"
+    ]
   }
 }

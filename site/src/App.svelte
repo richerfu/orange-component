@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Button } from "orange-component";
+  import { Button } from 'orange-component';
 </script>
 
 <main>
@@ -8,6 +8,6 @@
 
 <style lang="less">
   :global {
-    @import "../../src/orange-component.less";
+    @import '../../src/orange-component.less';
   }
 </style>
