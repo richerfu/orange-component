@@ -9,7 +9,7 @@
     "allowJs": true,
     "checkJs": true,
     "paths": {
-      "orange-component": ["../src"]
+      "orange-component": ["../types"]
     }
   },
   "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],

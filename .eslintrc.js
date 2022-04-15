@@ -36,5 +36,16 @@ module.exports = {
   rules: {
     'import/no-extraneous-dependencies': 'off',
     'import/prefer-default-export': 'off',
+    'import/no-mutable-exports': 'off',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
   },
 };

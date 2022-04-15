@@ -1,5 +1,5 @@
 <main>
-  <Button>按钮</Button>
+  <Button disabled>按钮</Button>
 </main>
 
 <script lang="ts">

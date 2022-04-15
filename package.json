@@ -2,6 +2,7 @@
   "name": "orange-component",
   "version": "0.0.0",
   "description": "Svelte UI Library",
+  "types": "./types/index.d.ts",
   "scripts": {
     "preinstall": "cd site && npm install",
     "prepare": "husky install",
