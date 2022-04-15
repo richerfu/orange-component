@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "description": "Svelte UI Library",
   "scripts": {
-    "preinstall": "husky install && cd site && npm install",
+    "preinstall": "cd site && npm install",
+    "prepare": "husky install",
     "lint:js:check": "eslint --ext .js,.ts,.svelte src/ site/",
     "lint:js:quiet": "eslint --quiet --ext .js,.ts,.svelte src/ site/",
     "lint:js:fix": "eslint --fix --ext .js,.ts,.svelte src/ site/",

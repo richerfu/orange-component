@@ -6,5 +6,5 @@ module.exports = {
   proseWrap: 'never',
   endOfLine: 'lf',
   arrowParens: 'avoid',
-  plugins: ['prettier-plugin-svelte'],
+  svelteSortOrder: 'markup-scripts-styles-options',
 };
