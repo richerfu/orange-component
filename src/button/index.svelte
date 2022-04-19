@@ -1,4 +1,4 @@
-<button on:click class={buttonClassName} {type}>
+<button on:click class={buttonClassName} {type} {disabled}>
   <slot />
   <svelte:component this={icon} />
 </button>
@@ -11,9 +11,9 @@
 
   const prefix = usePrefix();
 
-  let icon;
-  let className;
-  let disabled;
+  let icon = undefined;
+  let className = undefined;
+  let disabled = false;
   let theme = 'default';
   let type = 'button';
 

@@ -1,1 +1,1 @@
-export { default as Button } from './Button/index.d';
+export { default as Button } from './button/index.d';

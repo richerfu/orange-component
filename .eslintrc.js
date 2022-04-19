@@ -47,5 +47,6 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    'no-undef-init': 'off',
   },
 };
