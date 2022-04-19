@@ -5,6 +5,7 @@
 
 <script lang="ts">
   import classNames from 'classnames';
+  import { SIZE_MAP } from '../common';
   import { usePrefix } from '../styles';
 
   let buttonClassName;
@@ -16,11 +17,13 @@
   let disabled = false;
   let theme = 'default';
   let type = 'button';
+  let size = undefined;
 
   $: buttonClassName = classNames(`${prefix}-button`, className, {
     [`${prefix}-button--theme-${theme}`]: true,
     [`${prefix}-is-disabled`]: disabled,
+    [`${prefix}-${SIZE_MAP[size]}`]: size,
   });
 
-  export { className, disabled, icon, theme, type };
+  export { className, disabled, icon, theme, type, size };
 </script>

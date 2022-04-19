@@ -24,6 +24,12 @@ interface ButtonProps extends StyleProps {
    * @default default
    */
   theme?: 'default' | 'primary' | 'danger' | 'warning' | 'success';
+
+  /**
+   * 按钮大小
+   * @default default
+   */
+  size?: 'default' | 'small' | 'large';
 }
 
 export default class Button extends SvelteComponentTyped<
