@@ -1,13 +1,19 @@
-<main>
-  <Button disabled>按钮</Button>
+<main class="main">
+  <Header />
 </main>
 
-<script lang="ts">
-  import { Button } from 'orange-component';
+<script>
+  import Header from './layout/header.svelte';
 </script>
 
 <style lang="less">
   :global {
     @import '../../src/orange-component.less';
+    #app {
+      width: 100%;
+    }
+  }
+  .main {
+    width: 100%;
   }
 </style>
