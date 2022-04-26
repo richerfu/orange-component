@@ -1,6 +1,6 @@
 <button on:click class={buttonClassName} {type} {disabled}>
-  <slot />
   <svelte:component this={icon} />
+  <slot />
 </button>
 
 <script lang="ts">

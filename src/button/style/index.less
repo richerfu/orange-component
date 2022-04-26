@@ -8,6 +8,9 @@
   border: 1px solid rgb(220 220 220);
   border-radius: 4px;
   transition: color 0.2s linear, border-color 0.2s linear;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
 
   &:hover {
     color: rgb(38 111 232);
@@ -15,6 +18,11 @@
   }
   &.@{prefix}-size-s {
     padding: 0 7px;
-    line-height: 18px;
+    font-size: 12px;
+    height: 24px;
+  }
+  &.@{prefix}-size-l {
+    padding: 0 23px;
+    height: 40px;
   }
 }

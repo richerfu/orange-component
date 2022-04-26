@@ -2,12 +2,14 @@
   <Header />
   <div class="content">
     <Side />
+    <Content />
   </div>
 </main>
 
 <script>
   import Header from './layout/header.svelte';
   import Side from './layout/side.svelte';
+  import Content from './Content.svelte';
 </script>
 
 <style lang="less">
@@ -34,6 +36,8 @@
     .content {
       margin-top: 60px;
       height: 100%;
+      display: flex;
+      flex-direction: row;
     }
   }
 </style>

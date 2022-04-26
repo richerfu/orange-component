@@ -14,5 +14,9 @@ export default defineConfig({
     host: true,
     port: 9527,
     open: true,
+    fs: {
+      strict: true,
+      allow: ['.', join(__dirname, '../src')],
+    },
   },
 });
