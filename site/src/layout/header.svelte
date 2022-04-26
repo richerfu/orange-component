@@ -21,9 +21,11 @@
     left: 0;
     justify-content: space-between;
     .title {
-      font-size: 26px;
+      font-size: 20px;
       font-weight: 600;
       padding-left: 10px;
+      display: flex;
+      align-items: center;
     }
     .nav {
       font-size: 14px;

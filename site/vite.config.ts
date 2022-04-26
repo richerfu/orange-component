@@ -10,4 +10,9 @@ export default defineConfig({
       'orange-component': join(__dirname, '../src'),
     },
   },
+  server: {
+    host: true,
+    port: 9527,
+    open: true,
+  },
 });
